@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume - Luvsangombo Gochoodorj</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			line-height: 1.6;
+			background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+			min-height: 100vh;
+			padding: 2rem;
+		}
+
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		.header {
+			text-align: center;
+			margin-bottom: 2rem;
+			color: white;
+		}
+
+		.header h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0.5rem;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		.header p {
+			font-size: 1.1rem;
+			opacity: 0.9;
+		}
+
+		.navigation {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		.nav-button {
+			display: inline-block;
+			background: #3498db;
+			color: white;
+			padding: 0.8rem 1.5rem;
+			border-radius: 25px;
+			text-decoration: none;
+			margin: 0 0.5rem;
+			transition: all 0.3s;
+		}
+
+		.nav-button:hover {
+			background: #2980b9;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+		}
+
+		.resume-content {
+			background: white;
+			border-radius: 20px;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+		}
+
+		.pdf-container {
+			width: 100%;
+			height: 800px;
+			position: relative;
+		}
+
+		.pdf-embed {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		.pdf-fallback {
+			padding: 3rem;
+			text-align: center;
+			color: #666;
+		}
+
+		.pdf-fallback h2 {
+			margin-bottom: 1rem;
+			color: #2c3e50;
+		}
+
+		@media (max-width: 768px) {
+			body {
+				padding: 1rem;
+			}
+
+			.header h1 {
+				font-size: 2rem;
+			}
+
+			.pdf-container {
+				height: 600px;
+			}
+
+			.nav-button {
+				display: block;
+				margin: 0.5rem 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Resume</h1>
+			<p>Luvsangombo Gochoodorj - Senior Software Engineer</p>
+		</div>
+
+		<div class="navigation">
+			<a href="index.html" class="nav-button">
+				<i class="fas fa-arrow-left"></i> Back to Portfolio
+			</a>
+			<a href="resource/resume.pdf" class="nav-button" target="_blank">
+				<i class="fas fa-download"></i> Download PDF
+			</a>
+		</div>
+
+		<div class="resume-content">
+			<div class="pdf-container">
+				<iframe class="pdf-embed" src="resource/resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+					type="application/pdf">
+					<div class="pdf-fallback">
+						<h2>PDF Viewer Not Supported</h2>
+						<p>Your browser doesn't support embedded PDF viewing.</p>
+						<p>Please download the resume using the button below or use a modern browser like Chrome,
+							Firefox, or Edge.</p>
+					</div>
+				</iframe>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

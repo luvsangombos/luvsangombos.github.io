@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 3rem;
+	color: white;
+}
+
+.header h1 {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+	font-size: 1.2rem;
+	opacity: 0.9;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2rem;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.sidebar {
+	background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+	color: white;
+	padding: 2rem;
+}
+
+.profile-section {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.profile-pic {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 auto 1rem;
+	border: 5px solid white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+.profile-title {
+	color: #3498db;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.contact-info {
+	margin-top: 2rem;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border-radius: 8px;
+	transition: background 0.3s;
+}
+
+.contact-item:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-item i {
+	width: 20px;
+	margin-right: 1rem;
+	color: #3498db;
+}
+
+.contact-item a {
+	color: white;
+	text-decoration: none;
+}
+
+.contact-item a:hover {
+	color: #3498db;
+}
+
+.resume-item {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	padding: 0.5rem;
+	border-radius: 8px;
+	transition: background 0.3s;
+	text-decoration: none;
+	color: white;
+}
+
+.resume-item:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.resume-item i {
+	width: 20px;
+	margin-right: 1rem;
+	color: #3498db;
+}
+
+.main-section {
+	padding: 2rem;
+}
+
+.section {
+	margin-bottom: 3rem;
+}
+
+.section-title {
+	font-size: 2rem;
+	color: #2c3e50;
+	margin-bottom: 1.5rem;
+	border-bottom: 3px solid #3498db;
+	padding-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.section-title i {
+	margin-right: 0.5rem;
+	color: #3498db;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-radius: 10px;
+	border-left: 4px solid #3498db;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover,
+.education-item:hover,
+.project-item:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	margin-bottom: 0.5rem;
+}
+
+.item-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.item-company {
+	color: #3498db;
+	font-weight: 600;
+}
+
+.item-date {
+	background: #3498db;
+	color: white;
+	padding: 0.3rem 0.8rem;
+	border-radius: 15px;
+	font-size: 0.9rem;
+}
+
+.item-description {
+	margin-top: 1rem;
+}
+
+.item-description ul {
+	padding-left: 1.5rem;
+}
+
+.item-description li {
+	margin-bottom: 0.5rem;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+.skill-tag {
+	background: #2c3e50;
+	color: white;
+	padding: 0.2rem 0.5rem;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+.skills-category {
+	margin-bottom: 1rem;
+}
+
+.skills-category-title {
+	font-size: 1rem;
+	color: #2c3e50;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+	border-bottom: 2px solid #3498db;
+	padding-bottom: 0.2rem;
+	display: inline-block;
+}
+
+.achievement-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.achievement-card {
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	color: white;
+	padding: 1.5rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.achievement-icon {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.project-links {
+	margin-top: 1rem;
+}
+
+.project-link {
+	display: inline;
+	background: none;
+	color: #3498db;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	text-decoration: underline;
+	margin-right: 0;
+	font-size: 0.9rem;
+	transition: color 0.3s;
+}
+
+.project-link:hover {
+	color: #2980b9;
+	text-decoration: none;
+}
+
+.achievement-list {
+	background: #f8f9fa;
+	padding: 1.5rem;
+	border-radius: 10px;
+	border-left: 4px solid #e67e22;
+}
+
+.achievement-list p {
+	margin-bottom: 0.8rem;
+	font-size: 1rem;
+	color: #2c3e50;
+	display: flex;
+	align-items: center;
+}
+
+.achievement-list p:last-child {
+	margin-bottom: 0;
+}
+
+.achievement-list p::before {
+	content: "🏆";
+	margin-right: 0.8rem;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+	.main-content {
+		grid-template-columns: 1fr;
+	}
+
+	.header h1 {
+		font-size: 2rem;
+	}
+
+	.item-header {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.item-date {
+		margin-top: 0.5rem;
+	}
+}
